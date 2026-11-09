@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Inherits TargetFramework, Nullable, ImplicitUsings, and Analyzers from Directory.Build.props -->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Provides ASP.NET Core Auth, JWT Bearer, HttpContext, and middleware without version conflicts -->
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Inherits TargetFramework, Nullable, ImplicitUsings, and Analyzers from Directory.Build.props -->
+	</PropertyGroup>
+
+</Project>

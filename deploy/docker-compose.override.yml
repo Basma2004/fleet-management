@@ -1,0 +1,3 @@
+# Used to expose local development ports or inject overrides without modifying docker-compose.yml
+version: '3.8'
+services: {}

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Inherits TargetFramework, Nullable, ImplicitUsings, and Analyzers from Directory.Build.props -->
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- MassTransit.RabbitMQ automatically pulls in the matching versions of Hosting, DI, and Logging -->
+		<PackageReference Include="MassTransit.RabbitMQ" Version="8.3.6" />
+	</ItemGroup>
+
+</Project>
