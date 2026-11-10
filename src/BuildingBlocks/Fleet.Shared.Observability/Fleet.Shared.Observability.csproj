@@ -7,6 +7,7 @@
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 
+		<PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="9.0.0" />
 		<!-- Logging (Serilog) -->
 		<PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
 		<PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />

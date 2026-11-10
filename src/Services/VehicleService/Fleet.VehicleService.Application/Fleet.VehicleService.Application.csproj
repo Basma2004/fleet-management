@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fleet.VehicleService.Domain\Fleet.VehicleService.Domain.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Fleet.Shared.Contracts\Fleet.Shared.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Fleet.Shared.Messaging\Fleet.Shared.Messaging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

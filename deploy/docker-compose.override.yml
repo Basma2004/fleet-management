@@ -1,3 +1,20 @@
-# Used to expose local development ports or inject overrides without modifying docker-compose.yml
-version: '3.8'
-services: {}
+
+services:
+  vehicle-service:
+    build:
+      context: ../
+      dockerfile: src/Services/VehicleService/Fleet.VehicleService.Api/Dockerfile
+    container_name: fleet-vehicle-service
+    ports:
+      - "5101:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=fleet_vehicle;Username=fleet;Password=fleet_dev_pwd
+      - RabbitMQ__Host=rabbitmq
+      - RabbitMQ__Username=fleet
+      - RabbitMQ__Password=fleet_dev_pwd
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
